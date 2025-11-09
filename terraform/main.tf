@@ -83,22 +83,32 @@ resource "aws_security_group" "web_sg" {
 
 # EC2 Instance
 resource "aws_instance" "web_server" {
-  ami           = "ami-0dee22c13ea7a9a67" # Amazon Linux 2 in ap-south-1
-  instance_type = var.instance_type
-  subnet_id     = aws_subnet.public_subnet.id
+  ami           = "ami-0da59f1af71ea4ad2"   # amezon linux
+  instance_type = "t2.micro"
   key_name      = var.key_name
-  security_groups = [aws_security_group.web_sg.name]
+  subnet_id     = aws_subnet.public_subnet.id
+  vpc_security_group_ids = [aws_security_group.web_sg.id]
 
   user_data = <<-EOF
-              #!/bin/bash
-              sudo yum update -y
-              sudo yum install -y httpd
-              sudo systemctl start httpd
-              sudo systemctl enable httpd
-              echo "<h1>Hello from Terraform EC2 Instance</h1>" > /var/www/html/index.html
-              EOF
+#!/bin/bash
+yum update -y
+yum install -y httpd
+systemctl start httpd
+systemctl enable httpd
+
+# Create custom web page
+cat <<'HTML' > /var/www/html/index.html
+${file("../app/index.html")}
+HTML
+
+chown apache:apache /var/www/html/index.html
+chmod 644 /var/www/html/index.html
+EOF
 
   tags = {
     Name = "web-server"
   }
 }
+
+
+  

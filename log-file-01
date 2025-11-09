@@ -1,0 +1,42 @@
+[33mcommit ea2b25907c132ac3c2c55f2ad21b789a156804eb[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mexperiment[m[33m, [m[1;31morigin/experiment[m[33m)[m
+Author: suraj-rokade <surajrokade19@gmail.com>
+Date:   Fri Nov 7 15:48:01 2025 +0530
+
+    Experiment new branch for testing
+
+[33mcommit fa87d3d6411732486dee8fb743befe98d6b038b7[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m
+Author: suraj-rokade <surajrokade19@gmail.com>
+Date:   Fri Nov 7 12:51:28 2025 +0530
+
+    Index Page updated
+
+[33mcommit 3a3a28582dd74a613a411b5babeef11916aed1aa[m
+Author: suraj-rokade <surajrokade19@gmail.com>
+Date:   Sat Nov 1 21:17:51 2025 +0530
+
+    IaC Files
+
+[33mcommit c40bef58fce649bd4f0ef6ff16f0e51b3c671493[m
+Author: suraj-rokade <surajrokade19@gmail.com>
+Date:   Sat Nov 1 11:35:59 2025 +0530
+
+    index Page
+
+[33mcommit e0af42e7c4132fb880d01f80de85881aa3281ee6[m
+Merge: 7882749 a435a70
+Author: suraj-rokade <surajrokade19@gmail.com>
+Date:   Sat Nov 1 10:23:22 2025 +0530
+
+    Initial folder structure setup
+
+[33mcommit 7882749721972f46ea5896c32dc861c80707d943[m
+Author: suraj-rokade <surajrokade19@gmail.com>
+Date:   Sat Nov 1 10:15:21 2025 +0530
+
+    Initial Project Setup
+
+[33mcommit a435a70725e61bfdd57cb8fcb73db116ce8de7b9[m
+Author: suraj-rokade <66933157+suraj-rokade@users.noreply.github.com>
+Date:   Sat Nov 1 10:13:15 2025 +0530
+
+    Initial commit

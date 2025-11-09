@@ -10,5 +10,5 @@ variable "instance_type" {
 
 variable "key_name" {
   description = "Name of the existing EC2 Key Pair to SSH"
-  default = "nusummit-devops-task"
+  default = "nusummit-devops-task-key-new"
 }
